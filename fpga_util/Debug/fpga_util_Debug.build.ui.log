@@ -1,0 +1,40 @@
+2020-04-23T12:11:37.617525--12:11:37 **** Incremental Build of configuration Debug for project fpga_util ****
+--make all 
+--Building file: ../fpga_utility.c
+--Invoking: GCC C Compiler
+--gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fpga_utility.d" -MT"fpga_utility.o" -o "fpga_utility.o" "../fpga_utility.c"
+--../fpga_utility.c: In function ‘fpga_getplatform’:
+-/fpga_util/fpga_utility.c63-1-1unused variable ‘zynqmpstr’ [-Wunused-variable]1-../fpga_utility.c:63:15: warning: unused variable ‘zynqmpstr’ [-Wunused-variable]
+--         char *zynqmpstr = "Xilinx ZynqMP FPGA Manager";
+--               ^
+-/fpga_util/fpga_utility.c61-1-1unused variable ‘fpstr’ [-Wunused-variable]1-../fpga_utility.c:61:14: warning: unused variable ‘fpstr’ [-Wunused-variable]
+--         char fpstr[100];
+--              ^
+--../fpga_utility.c: In function ‘cmd_flags’:
+-/fpga_util/fpga_utility.c175-1-1unused variable ‘valid_flag’ [-Wunused-variable]1-../fpga_utility.c:175:6: warning: unused variable ‘valid_flag’ [-Wunused-variable]
+--  int valid_flag = 0;
+--      ^
+--../fpga_utility.c: In function ‘isvalid_flags’:
+-/fpga_util/fpga_utility.c192-1-1unused variable ‘valid_flag’ [-Wunused-variable]1-../fpga_utility.c:192:6: warning: unused variable ‘valid_flag’ [-Wunused-variable]
+--  int valid_flag = 0;
+--      ^
+--../fpga_utility.c: In function ‘main’:
+-/fpga_util/fpga_utility.c217-1-1unused variable ‘Module’ [-Wunused-variable]1-../fpga_utility.c:217:8: warning: unused variable ‘Module’ [-Wunused-variable]
+--  char *Module[100] = {0};
+--        ^
+-/fpga_util/fpga_utility.c216-1-1unused variable ‘flag’ [-Wunused-variable]1-../fpga_utility.c:216:58: warning: unused variable ‘flag’ [-Wunused-variable]
+--  char *binfile = NULL, *overlay = NULL, *AesKey = NULL, *flag = NULL, *partial_overlay = NULL;
+--                                                          ^
+-/fpga_util/fpga_utility.c215-1-1unused variable ‘iszynqmp’ [-Wunused-variable]1-../fpga_utility.c:215:6: warning: unused variable ‘iszynqmp’ [-Wunused-variable]
+--  int iszynqmp = fpga_getplatform();
+--      ^
+--Finished building: ../fpga_utility.c
+-- 
+--Building target: fpga_util
+--Invoking: GCC C Linker
+--gcc  -o "fpga_util"  ./fpga_utility.o   
+--Finished building target: fpga_util
+-- 
+--
+12:11:37 Build Finished (took 167ms)
+
